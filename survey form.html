@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey-form.css">
+    
+</head>
+<body>
+   
+
+<h1 id="title">SURVEY FORM</h1>
+<p id="description" >Thank you for taking out the time to fill this form.</p>
+<form id="survey-form">
+  <div id="form-control">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text"
+                   id="name"
+                   placeholder="Enter your name" 
+                   required/>
+  </div>
+   <div id="form-control">
+     <label for="email" id="email-label" >Email:</label>
+     <input type="email"
+                   id="email"
+                   placeholder="Enter your Email"
+                   required/>
+  </div>
+   <div id="form-control">
+     <label for="number" id="number-label">Age(optional):</label>
+     <input type="number"
+                   id="number"
+                   min=14
+                   max=70
+                   placeholder=18
+                   required/>
+  </div>
+  <div id="form-control">
+    <label for="dropdown" id="dropdown">Which role best describes you ?</label>
+    <select id="dropdown" name="role">
+      <option value="student">Student</option>
+      <option value="intern">Intern</option>
+      <option value="professional">Professional</option>
+      <option value="other">Other</option>  
+    </select>
+  </div>
+  <!-- checkboxes-->
+  <div id="form-control">
+   <label>Languages you want to learn
+                <small>(Check all that apply)</small>
+            </label>
+    <br>
+    <label for="inp1">
+                <input type="checkbox"
+                       name="inp"
+                       value="c">C</input></label>
+  <br>
+    <label for="inp2">
+                <input type="checkbox"
+                       name="inp"
+                       value="c++">C++</input></label>
+<br>
+    <label for="inp3">
+                <input type="checkbox"
+                       name="inp"
+                       value="python">Python</input></label>
+<br>
+    <label for="inp4">
+                <input type="checkbox"
+                       name="inp"
+                       value="java">Java</input></label>
+<br>
+    <label for="inp5">
+                <input type="checkbox"
+                       name="inp"
+                       value="javascript">Javascript</input></label>
+<br>
+    <label for="inp6">
+                <input type="checkbox"
+                       name="inp"
+                       value="react">React</input></label>
+
+  </div>
+  <!--- radio button--->
+  <div id="form-control">
+    <label >Would you recommend this page to anyone?</label>
+    <br>
+    <input type="radio"
+                       id="recommed1"
+                       name="recommed"
+                       value="yes"/>
+    <label for="recommed1">Yes</label>
+    <br>
+    <input type="radio"
+                       id="recommed2"
+                       name="recommed"
+                       value="no"/>
+    <label for="recommed2">No</label>
+    <br>
+     <input type="radio"
+                       id="recommed3"
+                       name="recommed"
+                       value="maybe"/>
+    <label for="recommend3">Maybe</label>
+   
+  </div>
+  <div id="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+  
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+  <label for="submit"></label>
+  <button type="submit" value="submit" id="submit">
+            Submit
+        </button>
+  
+</form>
+<footer>
+    <p>
+        This survey form is made by Ruchi.
+        <br>
+        ruchikushwaha49@gmail.com
+
+    </p>
+</footer>
+
+
+    
+</body>
+</html>
